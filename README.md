@@ -1,18 +1,20 @@
 
 # importR
 
-<!-- badges: start -->
-<!-- badges: end -->
+![](image.jpg)
 
-The goal of importR is to ...
+The goal of importR is to create an R data frame from external data in SAS, SPSS, or Strata binary files, Excel Workbooks, or delimited text files
 
 ## Installation
 
-You can install the development version of importR from [GitHub](https://github.com/) with:
+You can install the development version of importR with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("jjbelden/importR")
+if(!require("remotes")){
+  install.packages("remotes")
+  library("remotes"
+}
+remotes::intall_github("importR")
 ```
 
 ## Example
@@ -21,6 +23,6 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(importR)
-## basic example code
+mydata <- import()
 ```
 
